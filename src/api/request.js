@@ -3,7 +3,6 @@ import { Message } from "element-ui"
 
 axios.defaults.post['Content-Type'] = 'application/x-www-form-urlencoded'
 axios.defaults.baseUrl = '//blog-server.hunger-valley.com'
-
 export default function request(url,type="GET",data={}) {
     let option = {
         url,
