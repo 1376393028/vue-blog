@@ -1,22 +1,42 @@
 <template>
   <div id="app">
-    <router-view/>
+    <Header id="header"></Header>
+    <main id="main">
+      <router-view/>
+    </main>
+    <Footer id="footer"></Footer>
   </div>
 </template>
 
 <script>
+import Header from '@/components/header.vue'
+import Footer from '@/components/footer.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    Header,
+    Footer
+  }
 }
 </script>
 
-<style>
+<style lang="less">
+@import "./assets/common.less";
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
 }
+#header {
+  box-sizing: border-box;
+}
+#footer {
+  box-sizing: border-box;
+}
+#main {
+  flex: 1;
+  box-sizing: border-box;
+}
+
 </style>
