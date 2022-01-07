@@ -33,9 +33,10 @@ export default {
 }
 #footer {
   box-sizing: border-box;
+  margin-top: 50px;
 }
 #main {
-  flex: 1;
+  min-height: 1000px;
   box-sizing: border-box;
 }
 

@@ -1,5 +1,58 @@
 @import '../../assets/base.less';
 
-p {
-    color: @themeColor;
+#index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+                   
+
+    .blogs {
+        padding-top: 50px;
+        box-sizing: border-box;
+        width: 80%;
+        // border: 1px solid red;
+        
+        .item {
+            width: 100%;
+            min-height: 120px;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: nowrap;
+
+            .avator {
+                width: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    margin-top: 5px;
+                }
+                span {
+                    color: @color80;
+                }
+            }
+            .content {
+                flex: 1;
+                h3 {
+                    margin: 0 0 10px 0;
+                    span {
+                        color: @color80;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+                div {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+    }
 }

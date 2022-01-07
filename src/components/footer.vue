@@ -7,7 +7,7 @@
 @import '../assets/base.less';
 
 .footer {
-    background: @colorE9;
+    background: @colore9;
     height: 50px;
     display: flex;
     justify-content: center;
